@@ -1,0 +1,413 @@
+@font-face {
+    font-family: 'helvetica-light';
+    src: url('Helvetica-Light.eot');
+    src: url('Helvetica-Light.eot?#iefix') format('embedded-opentype'),
+        url('Helvetica-Light.woff2') format('woff2'),
+        url('Helvetica-Light.woff') format('woff'),
+        url('Helvetica-Light.ttf') format('truetype'),
+        url('Helvetica-Light.svg#Helvetica-Light') format('svg');
+    font-weight: 300;
+    font-size: 16;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'helvetica-bold';
+    src: url('Helvetica-Bold.eot');
+    src: url('Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Helvetica-Bold.woff2') format('woff2'),
+        url('Helvetica-Bold.woff') format('woff'),
+        url('Helvetica-Bold.ttf') format('truetype'),
+        url('Helvetica-Bold.svg#Helvetica-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-size: 11;
+    font-display: swap;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+		display: flex;
+		align-content: center;
+		padding: 15px 5%;
+		justify-content: space-between;
+		flex-direction: column;
+		background: #edf2f4;
+}
+
+#header > .logo {
+	order: 1;
+}
+
+#header > .navlinks {
+	order: 2;
+}
+
+#header > .navlinks2 {
+	order: 3;
+}
+
+body {
+	background: #FFFFFF;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+main {
+	width: 100%;
+	margin: auto;
+}
+
+.navlinks, .navlinks2{
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		flex-direction: column;
+		text-align: center;
+}
+
+p, .about, .home, .design, .instagram, li {
+	font-family: 'helvetica-light';
+	font-size: 11px;
+	color: #2b2d42;
+	text-decoration: none;
+	border-radius: 60% 40% 78% 22% / 18% 65% 35% 82%;
+	transition: border-radius 1s;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-family: 'helvetica-light';
+	font-size: 11px;
+	color: #2b2d42;
+}
+
+/*.navlinks li, .navlinks2 li{
+	padding: 0px 15%;
+}*/
+
+li:hover, .logo:hover, .play:hover {
+	border: 1px solid #2b2d42;
+	border-radius: 12% 88% 15% 85% / 53% 72% 28% 47%;
+}
+
+/*h1 {
+	text-align: center;
+	font-family: 'helvetica-bold';
+	font-size: 28px;
+	padding: 75px;
+	color: #2b2d42;
+	text-decoration: none;
+}*/
+
+.logo {
+	text-align: center;
+	font-family: 'helvetica-bold';
+	font-size: 16px;
+	color: #2b2d42;
+	text-decoration: none;
+	border-radius: 60% 40% 78% 22% / 18% 65% 35% 82%;
+	transition: border-radius 1s;
+	margin-bottom: 5px;
+	}
+
+.standard {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	padding-left: 0px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.socialmedia {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-top: 100px;
+}
+
+.socialmedia li {
+	padding: 0 5%;
+}
+
+.socialmedia li img {
+	width: 40px;
+}
+
+footer p {
+	text-align: center;
+	color: #8d99ae;
+	margin: auto;
+	padding: 50px 0px;
+} 
+
+.box1 p {
+	text-align: center;
+}
+
+ .play {
+ 	position: absolute;
+ 	left: 48%;
+ 	top: 52%;
+	text-align: center;
+	margin: 0px;
+	z-index: 1;
+	cursor: pointer;
+	border-radius: 60% 40% 78% 22% / 18% 65% 35% 82%;
+	transition: border-radius 1s;
+}
+
+.anime {
+	padding-top: 35px ;
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	transform: scale(0.84);
+}
+
+
+.animation {
+	padding-top: 35px;
+	text-align: center;
+	margin: 0;
+}
+
+video {
+	width: 100%;
+	height: auto;
+/*	min-height: 562.5px;*/
+}
+
+.showcase {
+	padding-top: 75px;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+/*	flex-direction: column;*/
+}
+
+.hidden {
+      position: relative;
+      margin-top: auto;
+      margin-left: auto;
+      visibility: visible;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      text-align: left;
+}
+
+.sidenav {
+	list-style: none;
+	width: 100px;
+	position: absolute;
+	visibility: hidden;
+}
+
+section img {
+	width: 80%;
+/*	margin-left: 29%;*/
+/*	clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);*/
+/*	transition: clip-path .3s;*/
+/*	position: absolute;*/
+}
+
+section {
+	text-align: center;
+	width: 800px;
+}
+
+@media (min-width: 960px){
+
+#header {
+		display: flex;
+		align-content: center;
+		padding: 15px 5%;
+		justify-content: space-between;
+		flex-direction: row;
+		background: #edf2f4;
+}
+
+#header > .logo {
+	order: 2;
+}
+
+#header > .navlinks {
+	order: 1;
+}
+
+#header > .navlinks2 {
+	order: 3;
+}
+
+main {
+	width: 75%;
+	margin: auto;
+}
+
+.navlinks, .navlinks2{
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		flex-direction: row;
+		padding: 0;
+		margin: 0;
+}
+
+.navlinks li, .navlinks2 li{
+	padding: 0px 15%;
+}
+
+
+.standard {
+	width: 30%;
+	padding: 0px 30px;
+	height: auto;
+}
+
+.logo {
+	margin-bottom: 0px;
+}
+
+.box1 p{
+width: 40%;
+}
+
+.box1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 75px;
+}
+.box1 p {
+	text-align: left;
+}
+
+/*.socialmedia {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-top: 100px;
+}*/
+
+/*.socialmedia li {
+	padding: 0 5%;
+}
+
+.socialmedia li img {
+	width: 40px;
+}*/
+
+/*footer p {
+	text-align: center;
+	color: #8d99ae;
+	margin: auto;
+	padding: 50px 0px;
+} */
+
+/* .play {
+ 	position: absolute;
+ 	left: 48%;
+ 	top: 52%;
+	text-align: center;
+	margin: 0px;
+	z-index: 1;
+	cursor: pointer;
+	border-radius: 60% 40% 78% 22% / 18% 65% 35% 82%;
+	transition: border-radius 1s;
+}*/
+
+/*.anime {
+	padding-top: 35px ;
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	transform: scale(0.84);
+}
+
+
+.animation {
+	padding-top: 35px;
+	text-align: center;
+	margin: 0;
+}*/
+
+.hidden {
+      position: absolute;
+      margin-top: -100px;
+      margin-left: -100px;
+      visibility: hidden;
+}
+
+.showcase {
+	padding-top: 75px;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section img {
+	width: 80%;
+	margin-left: 29%;
+	visibility: hidden;
+	clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+	transition: clip-path .3s;
+	position: absolute;
+}
+
+section {
+	width: 800px;
+	margin-bottom: 500px;
+}
+
+.types {
+	position: fixed;
+	width:  800px;
+	text-align: left;
+}
+
+#video {
+	visibility: hidden;
+}
+
+video {
+	width: 70%;
+	height: auto;
+	min-height: 562.5px;
+}
+
+.sidenav {
+	list-style: none;
+	width: 100px;
+	position: relative;
+	visibility: visible;
+	margin: auto;
+}
+
+.sidenav li {
+	padding: 0.8em 0 0.8em 0.8em;
+	cursor: pointer;
+	position: relative;
+}
+
+
+.intro {
+	visibility: visible;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100% );
+}
+}
+}
+
+
